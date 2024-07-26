@@ -89,12 +89,12 @@ ImplicitGlobalGrid is fully interoperable with \texttt{MPI.jl}. By default, it c
 The modular design of ImplicitGlobalGrid, which heavily relies on multiple dispatch, enables adding support for other hardware with little development effort (including new kind of accelerators as soon as they become programmable with Julia). Support for AMD GPUs using the recently matured \texttt{AMDGPU.jl} package \cite{amdgpu_jl} could be implemented shortly after as a result (Nvidia GPUs are supported using \texttt{CUDA.jl} \cite{besard2018effective}). ImplicitGlobalGrid supports at present distributed parallelization for CUDA- and ROCm-capable GPUs as well as for CPUs.
 
 \section{Results}
-We here report the scaling achieved with the 3-D heat diffusion xPU solver (Fig.~\ref{fig:code}) on up to 2197 Nvidia Tesla P100 GPUs on the Piz Daint Supercomputer at the Swiss National Supercomputing Centre (Fig.~\ref{fig:weak_scaling}; 17^3, i.e., 2197 nodes is the biggest cubic node topology that can be submitted in the normal queue of Piz Daint). We observe a parallel efficiency of 93\% on 2197 GPUs.
+We here report the scaling achieved with the 3-D heat diffusion xPU solver (Fig.~\ref{fig:code}) on up to 2197 Nvidia Tesla P100 GPUs on the Piz Daint Supercomputer at the Swiss National Supercomputing Centre (Fig.~\ref{fig:weak_scaling}; $17^\mathrm{3}$, i.e., 2197 nodes is the biggest cubic node topology that can be submitted in the normal queue of Piz Daint). We observe a parallel efficiency of 93\% on 2197 GPUs.
 Moreover, we have employed ImplicitGlobalGrid (and ParallelStencil) for the parallelization of a solver for nonlinear 3-D poro-visco-elastic two-phase flow and have also conducted a weak scaling experiment on Piz Daint (Fig.~\ref{fig:weak_scaling_realworld}). We observe a parallel efficiency of over 95\% on up to 1024 GPUs. As a performance reference, the solver implemented in Julia achieved 90\% of the per-node performance of the respective original solver written in CUDA C using MPI.
 
 \begin{figure}[t]
     \centerline{\includegraphics[width=8cm]{julia_gpu_par_eff.png}}
-    \caption{Parallel weak scaling of the 3-D heat diffusion solver (Fig.~\ref{fig:code}) from $1$ to $2197$ ($17^3$) Nvidia P100 GPUs on Piz Daint at CSCS. The blue surface visualizes the 95\% confidence interval of the reported medians (20 samples). The raw data and plotting script are available in \url{github.com/omlins/ImplicitGlobalGrid.jl/tree/master/paper}.}
+    \caption{Parallel weak scaling of the 3-D heat diffusion solver (Fig.~\ref{fig:code}) from $1$ to $2197$ ($17^\mathrm{3}$) Nvidia P100 GPUs on Piz Daint at CSCS. The blue surface visualizes the 95\% confidence interval of the reported medians (20 samples). The raw data and plotting script are available in \url{github.com/omlins/ImplicitGlobalGrid.jl/tree/master/paper}.}
 	\label{fig:weak_scaling}
 \end{figure}
 
