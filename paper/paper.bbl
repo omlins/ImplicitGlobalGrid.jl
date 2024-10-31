@@ -5,17 +5,20 @@ T.~Besard, C.~Foket, and B.~De~Sutter.
 Effective extensible programming: unleashing {J}ulia on {GPUs}.
 {\em IEEE Transactions on Parallel and Distributed Systems}, 30(4):827--841,
   2018.
+\href{http://dx.doi.org/10.1109/TPDS.2018.2872064}{doi:10.1109/TPDS.2018.2872064}.
 
 \bibitem{byrne2021mpi}
 S.~Byrne, L.~C. Wilcox, and V.~Churavy.
 {MPI}.jl: {J}ulia bindings for the {M}essage {P}assing {I}nterface.
 In {\em Proceedings of the JuliaCon Conferences}, volume~1, page~68, 2021.
+\href{http://dx.doi.org/10.21105/jcon.00068}{doi:10.21105/jcon.00068}.
 \url{https://github.com/JuliaParallel/MPI.jl}.
 
-\bibitem{parallelstencil2022}
+\bibitem{parallelstencil2024}
 S.~Omlin and L.~R{\"{a}}ss.
 {H}igh-performance x{PU} {S}tencil {C}omputations in {J}ulia.
-{\em Proc. JuliaCon Conf.}, ?:2, 2022.
+{\em Proceedings of the JuliaCon Conferences}, 6(64):138, 2024.
+\href{http://dx.doi.org/10.21105/jcon.00138}{doi:10.21105/jcon.00138}.
 
 \bibitem{pasc21}
 S.~Omlin, L.~R{\"{a}}ss, N.~Keepfer, G.~Kwasniewski, B.~Malvoisin, and Y.~Y.
@@ -28,5 +31,6 @@ PASC21 conference, 2021.
 J.~Samaroo, T.~Besard, V.~Churavy, D.~Lin, and other contributors.
 {AMDGPU.jl}: {AMD} {GPU} ({ROC}m) programming in {J}ulia.
 \url{https://github.com/JuliaGPU/AMDGPU.jl}, 2013.
+\href{http://dx.doi.org/10.5281/zenodo.10040461}{doi:10.5281/zenodo.10040461}.
 
 \end{thebibliography}
